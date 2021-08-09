@@ -77,6 +77,8 @@ Antonio Woods |	1 |
 Luis Hodges |	1 |
 Emily Weber |	2 |
 Norman Ryan |	1 |
+## Incompleted tasks
+None
 ## Further improvements
 1. Can explore Spark for parallel processing and compare current performance with Spark jobs.
 2. Can check Postgres performance with other databases and choose the best database according to performance.
