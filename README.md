@@ -54,6 +54,7 @@ CREATE TABLE public.aggregated_table (
 ## Further improvements
 1. Can explore Spark for parallel processing and compare current performance with Spark jobs.
 2. Can check Postgres performance with other databases and choose the best database according to performance.
+3. Can schedule the data ingestion job for daily run.
 
 
 
