@@ -50,7 +50,33 @@ CREATE TABLE public.aggregated_table (
 3. To support updation of existing records, Created a temp table of incoming data and delete records from target table present in temp table and then loaded incoming data to target.
 4. Ingested entire records to single target table i.e. products.
 5. Created an aggregated table which has two columns "name" and "number_of_products" to store aggregated data.
+#### Total 500000 records in target table. Sample 10 rows
+| name        | sku           | description  |
+| ------------- |:-------------:| -----:|
+| John Bailey |	course-there |	Whatever realize recently. Mind start next task. Organization experience present simple describe cover while garden.Moment professional beyond open. That open realize minute special.|
+Mario Green |	hotel-trip-human |	Especially model candidate human than. Help watch carry ask any good. Site blood season in various easy order.Send often open whom avoid pull.|
+Patricia Davis |	wide-movie-despite |	Magazine development food talk election. Congress television near difference hospital behind a. Government she arm they area low.|
+Elizabeth Poole |	each-officer |	Student town artist another exactly. Rise majority before today tonight establish operation. |
+Tina Morris |	service-reduce |	Pretty pass million cup spring voice discuss. Week admit discover necessary above use cost. Run those brother bill current.
+William Walker |	reflect-term-memory |	Light discussion clearly news challenge third drive. City perhaps very. House career range media. Section push allow man society final exactly. |
+Bryan Kelly |	real-forget |	Source glass blood them. Tend bring task. Sound yeah feel son behind.Low between play financial discover treatment somebody. |
+Craig Tucker |	information-hour |	Break American down wife draw. Cold start operation how appear lot. |
+Amber Olson |	choose-though |	Economic where result wall. Defense employee large. Clear his way fish.Bed standard or its. Challenge simply under subject citizen pass course. College church investment everything key.|
+Cynthia Cain |	finish-agreement |	Relate choice floor. Since travel bring say past no air. Particular great issue build. Key bank chance policy recent call almost.      | 
 
+#### Total 444048 records in aggregated table. Sample 10 rows
+| name | number_of_products|
+| ------------- |:-------------:|
+|Luis Swanson Jr. |	1 |
+Tiffany Choi |	1 |
+Matthew Hunt |	8 |
+William Carey |	3 |
+Evan Lin |	1 |
+Erin Young |	6 |
+Antonio Woods |	1 |
+Luis Hodges |	1 |
+Emily Weber |	2 |
+Norman Ryan |	1 |
 ## Further improvements
 1. Can explore Spark for parallel processing and compare current performance with Spark jobs.
 2. Can check Postgres performance with other databases and choose the best database according to performance.
