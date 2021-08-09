@@ -43,7 +43,7 @@ def load():
         # drop temp table
         conn.connection.execute("drop table {}".format(os.getenv("TEMP_TABLE")))
 
-        # perform aggregation and save to aggregated table
+        # perform aggregation to find number of products having same name and save to aggregated table
         conn.connection.execute("insert into {} (select name,count(name) as number_of_products from {} group by name)".format(
             os.getenv("AGG_TABLE"),os.getenv("TARGET_TABLE")
         ))
