@@ -1,4 +1,4 @@
-# postman-assignment
+# CSV to Postgres using Dask
 Large file ingestion from CSV to Postgres database using parallel processing
 
 ## Steps to run
